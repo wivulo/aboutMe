@@ -121,10 +121,9 @@
    }
     
    .fullscreen-video-wrap video{
-    min-width: 116%;
+    width: 100%;
     min-height: 100%;
-    margin-bottom: -500px;
-    margin-left: -290px;
+    margin-bottom: -500px
    }
     
    .header-overlay{
@@ -135,8 +134,7 @@
     left: 0;
     background: #d3d3d3;
     z-index: 1;
-    opacity: 0.40;
-    
+    opacity: 0.40
    }
     
    .header-content{
