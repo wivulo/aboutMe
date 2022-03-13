@@ -33,18 +33,21 @@
         <div class="header-content flex f-column">
             <div class="line-1 flex f-row">
                 <div class="logo flex f-row f-left-center">
-                   <div><h2><span>&#10096; &#10097;</span></h2></div>
-                   <div>
-                       <h2>WIVULO</h2>
-                       <small>Walter Ivulo - Pipocas ideias developers</small>
-                   </div>
+                    <div>
+                        <h2><span>&#10096; &#10097;</span></h2>
+                    </div>
+                    <div>
+                        <h2>WIVULO</h2>
+                        <small>Walter Ivulo - Pipocas ideias developers</small>
+                    </div>
                 </div>
 
                 <div class="menu-content flex f-right-center">
                     <ul class="menu flex f-row">
-                        <li>Me</li>
-                        <li>projects</li>
-                        <li>contact</li>
+                        <li><a href="#me">Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li> <a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,13 +55,19 @@
             <div class="line-2 flex f-column f-left-bottom">
                 <div class="me-content flex f-column f-center">
                     <h1 class="roboto-bold">Valtércio O. Ivulo</h1>
-                    <h5 class="roboto-thin">Hello! I am a student. 3rd year of the Telecommunications Engineering course and freelance programmer<br>Website and Desktop</h5>
-                    
+                    <h5 class="roboto-thin">Hello! I am a student. 3rd year of the Telecommunications Engineering course
+                        and freelance programmer<br>Website and Desktop</h5>
+
+                    <div class="full flex f-center">
+                        <button class="btn btn-border">Saber mais...</button>
+                    </div>
+
                     <div class="socialNetwork flex f-row f-center">
                         <a href="http://facebook.com/walter_ivulo"><i class="fa fa-facebook"></i></a>
                         <a href="http://web.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
                         <a href="http://instagram.com/eclaterbc"><i class="fa fa-instagram"></i></a>
                     </div>
+
                 </div>
 
                 <div class="me-image flex">
@@ -68,65 +77,86 @@
         </div>
     </header>
 
-    <div class="section section-dark">
-        <h2>O que posso fazer?</h2>
-        <p class="skill-name"><i class="fa fa-cogs" aria-hidden="true"></i> Back-End (PHP, Nodejs, MySQL)</p>
-
-        <div class="skill-container">
-            <div class="skills back-end">50%</div>
+    <a id="skills"></a>
+    <div class="section flex f-row f-center section-dark">
+        
+        <div class="whatIdo flex f-center">
+            <h2>O que posso fazer?</h2>
         </div>
 
-        <p class="skill-name"><i class="fa fa-picture-o" aria-hidden="true"></i> Front-End (HTML, CSS, JS)</p>
-
         <div class="skill-container">
-            <div class="skills front-end">85%</div>
+            <p class="skill-name"><i class="fa fa-cogs" aria-hidden="true"></i> Back-End (PHP, Nodejs, MySQL)</p>
+
+            <div class="full flex f-center">
+                <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--value:50"></div>
+            </div>
         </div>
 
-
-        <p class="skill-name"><i class="fa fa-shield" aria-hidden="true"></i> Testing (RSpec, Jasmine, PhantomJS)</p>
-
         <div class="skill-container">
-            <div class="skills testing">10%</div>
+            <p class="skill-name"><i class="fa fa-picture-o" aria-hidden="true"></i> Front-End (HTML, CSS, JS)</p>
+
+            <div class="full flex f-center">
+                <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85"></div>
+            </div>
         </div>
 
-        <p class="skill-name"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Web Design</p>
-
         <div class="skill-container">
-            <div class="skills design">90%</div>
+            <p class="skill-name"><i class="fa fa-shield" aria-hidden="true"></i> Testing (RSpec, Jasmine, PhantomJS)</p>
+
+            <div class="full flex f-center">
+                <div role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="--value:10"></div>
+            </div>
         </div>
 
-        <p class="skill-name"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Learning a new skill</p>
+        <div class="skill-container">
+            <p class="skill-name"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Web Design</p>
+
+            <div class="full flex f-center">
+                <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="--value:90"></div>
+            </div>
+        </div>
 
         <div class="skill-container">
-            <div class="skills learn">100%</div>
+            <p class="skill-name"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Learning a new skill</p>
+            <div class="full flex f-center">
+                <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--value:100"></div>
+            </div>
         </div>
+
+        <div class="skill-container hidden"></div>
 
     </div>
 
-    <div class="section section section-dark">
+    <a id="projects"></a>
+    <div class="section section-whatIHadDo flex f-column f-center section-black">
+       
         <h2>O que eu já fiz?</h2>
-        <p class="txt txt-2">
-            Não muito na real, lol.<br>
-        </p>
-
-        <ul>
-            <li>
-                <p class="txt txt-2">
-                    Como trabalho de fim de curso do ensino médio desenvolvi um site de informativo(Inforsul, o nome).
-                </p>
-            </li>
-            <li>
-                <p class="txt txt-2">
-                    Neste preciso momento estamos(em grupo) a desenvolver um WEBAPP, focado na facilitação da educação
-                    em Angola.
-                </p>
-            </li>
-        </ul>
+        
+        <div class="full flex f-center">
+            <h3>Comming soon...</h3>
+        </div>
     </div>
 
-    <footer class="flex f-column f-center">
-        <div>
-            <h1>FIM</h1>
+    <a id="contact"></a>
+    <div class="section section-contact flex f-column f-center section-light">
+       
+        <h2>Contato</h2>
+        
+        <div class="full flex f-column f-center">
+            <p>Se você quiser conversar, entre em contato, estou quase sempre online :)</p>
+            <h3 class="roboto-lig">Envie uma mensagem</h3>
+            <p>Whatsapp: (+244) 922232675</p>
+            <p>Facebook: Walter Ivulo</p>
+            <p>Instagram: @Walter_Ivulo</p>
+            <p>Gmail: Walterivulo@gmail.com</p>
+        </div>
+    </div>
+
+    <footer class="section section-dark flex f-column f-center">
+        <div class="bg"></div>
+        <div class="txt-content">
+           <p> <i class="fontawesome fa fa-copyright"></i> copyright 2022 - all right reserved</p>
+           <p>create by @wivulo</p>
         </div>
     </footer>
 
