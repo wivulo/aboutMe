@@ -1,15 +1,20 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
+*{
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+  --facebook-color: rgb(23, 139, 248);
+}
 
-   body, html{
-    height: 100%;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.8em;
-    color: #666;
-   }
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
 
-  /* FontAwesome font and icons */
+/* FontAwesome font and icons */
 @font-face{
 	font-family: FontAwesome;
 	src: url('../letters/fontawesome-webfont.ttf') format('truetype');
@@ -44,16 +49,19 @@
 .roboto-medium{font-family: RobotoM;}
 .roboto-bold{font-family: RobotoB;}
     
-   h1, h2{
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
-   }
+h1, h2{
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
     
-   p, span{
-    font-family: 'Arimo', serif;
-    font-size: 20px;
-   }
-    
+p, span{
+   font-family: 'Arimo', serif;
+  font-size: 20px;
+}
+
+a{color: unset;}
+a:hover{color: unset}
+
    /* Scrolling Effect */
    .parallax-img1, .parallax-img2, .parallax-img3{
     position: relative;
@@ -181,9 +189,11 @@
    }
 
    .line-1{ height: 6%;}
-   .line-2{ height: 70%;}
-   .line-3{ height: 20%;}
+   .line-2{ height: 90%;}
    
+   .line-1, .line-2, .line-3{
+     position: relative;
+   }
    .menu{
      list-style: none;
    }
@@ -216,8 +226,12 @@
   }
 
   .me-content{
-    margin-left: 10%;
-    margin-bottom: 7%;
+    width: 50%;
+    height: 300px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .me-content h1{
@@ -225,13 +239,32 @@
     margin-bottom: 5px;
   }
 
-  .socialNetwork{
+  .me-image{
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .me-image img{
     width: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+    opacity: .6;
+  }
+
+  .socialNetwork{
+    width: 100%;
   }
 
   .socialNetwork i{
     font-family: FontAwesome;
-    margin: 10px 0;
+    margin: 0 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .socialNetwork i:hover{
+    transform: scale(1.2);
   }
     
    .header-content p{
