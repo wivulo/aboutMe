@@ -2,7 +2,7 @@
   padding: 0; 
   margin: 0; 
   box-sizing: border-box;
-  --facebook-color: rgb(23, 139, 248);
+  --bg-blue-color: #007ACC;
 }
 
 body, html{
@@ -301,7 +301,7 @@ a:hover{color: unset; text-decoration: none;}
    }
 
    .btn{
-     --color: whitesmoke;
+     --color: #30ADFF;
      width: 25%;
      height: 30px;
      background-color: transparent;
@@ -347,6 +347,14 @@ a:hover{color: unset; text-decoration: none;}
    .rating{
     display: inline-block;
     padding: 20px;
+   }
+
+   .index{
+     width: 100px;
+     height: 100px;
+     background-color: var(--bg-blue-color);
+     margin: 30px 20px;
+     text-align: center;
    }
     
    /* skills */
@@ -398,7 +406,7 @@ a:hover{color: unset; text-decoration: none;}
 
    div[role="progressbar"] {
      --size: 10rem;
-     --fg: #616161;
+     --fg: var(--bg-blue-color);
      --bg: transparent;
      --pgPercentage: var(--value);
      animation: growProgressBar 3s 1 forwards;
