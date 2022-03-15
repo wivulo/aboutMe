@@ -118,30 +118,6 @@ a:hover{color: unset; text-decoration: none;}
    }
     
     
-   /* image text and content styling */
-   .ptext{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-   }
-    
-   .ptext .border img{
-    position: relative;
-    top: -195px;
-    left: -20px;
-    max-height: 390px;
-    opacity: 0.90;
-   }
-    
-   .ptext .border.trans{
-    background-color: transparent;
-   }
-    
    /* Header Video Conent styling */
    .v-header{
     height: 100vh;
@@ -364,7 +340,7 @@ a:hover{color: unset; text-decoration: none;}
   }
 
    .skill-container {
-    width: 25%;
+    width: 100%;
     height: 300px;
     /* background-color: rgba(0, 0, 0, 0.4); */
     margin: 20px;
@@ -431,8 +407,49 @@ a:hover{color: unset; text-decoration: none;}
      height: 832px;
    }
 
-   .section-contact h2{
+  .section-contact p i {
+    font-family: FontAwesome;
+  }
+  
+  .section-contact h2{
      margin-bottom: 20px;
+   }
+   
+   .section-contact .contact-body {
+     width: 100%;
+     height: 300px;
+   }
+   
+   .contact-left,
+   .contact-right {
+     width: 45%;
+     height: 100%;
+     padding: 10px;
+    text-align: left
+   }
+   
+   .contact-left {
+     background-color: #fff;
+   }
+   
+   .contact-right {
+     background-color: var(--bg-blue-color);
+     color: #fff;
+   }
+   
+   .contact-title {
+     color: #ccc;
+   }
+   
+   .contact-left .txt-2 {
+     margin: 30px 0;
+     color: #777
+   }
+   
+   .contact-right .txt-6 {
+     margin-top: 100px;
+     margin-bottom: 30px;
+     color: #ddd
    }
 
    footer{
@@ -493,4 +510,12 @@ a:hover{color: unset; text-decoration: none;}
 .f-right-bottom{ 
   justify-content: flex-end; 
   align-items: flex-end;
+}
+
+.grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 20px;
+  place-items: center;
 }
