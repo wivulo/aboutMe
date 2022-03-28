@@ -204,8 +204,10 @@
    /* Section Styling */
     
    .section{
+     position: relative;
     text-align: center;
     padding: 50px 80px;
+    z-index: 1;
    }
     
    .section-light{
