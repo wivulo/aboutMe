@@ -13,6 +13,193 @@
   left: 0;
 
 }
+
+/* Header Video Conent styling */
+.v-header{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+  
+ .container{
+  /* padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto; */
+  text-align: center;
+  overflow: hidden;
+ }
+  
+ .fullscreen-video-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+ }
+  
+ .fullscreen-video-wrap video{
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: -500px;
+  object-fit: cover !important;
+ }
+  
+ .header-overlay{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d3d3d3;
+  z-index: 1;
+  opacity: 0.40;
+  
+ }
+  
+ .header-content{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  
+ }
+
+ .line-1{ height: 6%;}
+ .line-2{ height: 90%;}
+ 
+ .line-1, .line-2, .line-3{
+   position: relative;
+ }
+ .menu{
+   list-style: none;
+   color: #d3d3d3;
+ }
+
+ .menu li{
+   margin: 0 10px;
+   font-family: RobotoL;
+ }
+
+ .menu li:hover{
+   border-bottom: 1px solid #eee;
+   cursor: pointer;
+   user-select: none;
+ }
+
+ /* Logo & name */
+.logo{
+  width: 50%;
+  height: 100%;
+}
+
+.logo span{
+  display: block;
+  position: relative;
+  font-size: 36pt;
+  font-family: RobotoB, sans-serif;
+  top: -10px;
+  color: #282e34;
+}
+
+.logo h2{
+  font-size: 25pt;
+  text-align: left;
+  margin-bottom: -10px;
+  opacity: .7;
+  color: #d3d3d3;
+}
+
+.logo small{
+  font-size: 6pt;
+  color: #d3d3d3;
+}
+
+.menu-content{
+  width: 50%;
+  height: 100%;
+}
+
+.me-content{
+  width: 50%;
+  height: 300px;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.me-content h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.me-content h5{
+  text-align: left;
+  line-height: 1.3;
+}
+
+.socialNetwork{
+  width: 100%;
+}
+
+.socialNetwork i{
+  font-family: FontAwesome;
+  margin: 0 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.socialNetwork i:hover{
+  transform: scale(1.2);
+}
+
+.hover-blue:hover{
+  color: var(--bg-blue-color);
+}
+
+.hover-red:hover{
+  color: rgb(134, 21, 21);
+}
+
+.hover-green:hover{
+  color: green;
+}
+  
+ .header-content p{
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+ }
+  
+ /* About Me Button */
+ .logo-name a{
+  /* background-color: lightgreen; */
+  width: 200px;
+  height: 90px;
+  display: block;
+  left: 0;
+ }
+
+ .full{
+   width: 100%;
+   margin: 10px;
+ }
+
+ .btn{
+   --color: #30ADFF;
+   width: 25%;
+   height: 30px;
+   background-color: transparent;
+   border: 1px solid var(--color);
+   color: var(--color);
+   border-radius: 10px;
+   padding: 5px 0;
+   cursor: pointer;
+ }
     
    /* Section Styling */
     
@@ -37,175 +224,7 @@
    }
     
     
-   /* Header Video Conent styling */
-   .v-header{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-   }
-    
-   .container{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
-    overflow: hidden;
-   }
-    
-   .fullscreen-video-wrap{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-   }
-    
-   .fullscreen-video-wrap video{
-    width: 100%;
-    min-height: 100%;
-    margin-bottom: -500px;
-    object-fit: cover !important;
-   }
-    
-   .header-overlay{
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #d3d3d3;
-    z-index: 1;
-    opacity: 0.40;
-    
-   }
-    
-   .header-content{
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100vh;
-    
-   }
-
-   .line-1{ height: 6%;}
-   .line-2{ height: 90%;}
-   
-   .line-1, .line-2, .line-3{
-     position: relative;
-   }
-   .menu{
-     list-style: none;
-   }
-
-   .menu li{
-     margin: 0 10px;
-     font-family: RobotoL;
-   }
-
-   .menu li:hover{
-     border-bottom: 1px solid #eee;
-     cursor: pointer;
-     user-select: none;
-   }
-
-   /* Logo & name */
-  .logo{
-    width: 50%;
-    height: 100%;
-  }
-
-  .logo span{
-    display: block;
-    position: relative;
-    font-size: 36pt;
-    font-family: RobotoB, sans-serif;
-    top: -10px;
-    color: #282e34;
-  }
-
-  .logo h2{
-    font-size: 25pt;
-    text-align: left;
-    margin-bottom: -10px;
-    opacity: .7;
-  }
-
-  .logo small{
-    font-size: 6pt;
-  }
-
-  .menu-content{
-    width: 50%;
-    height: 100%;
-  }
-
-  .me-content{
-    width: 50%;
-    height: 300px;
-    margin-left: 5%;
-    margin-bottom: 2%;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .me-content h1{
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-
-  .me-content h5{
-    text-align: left;
-    line-height: 1.3;
-  }
-
-  .socialNetwork{
-    width: 100%;
-  }
-
-  .socialNetwork i{
-    font-family: FontAwesome;
-    margin: 0 10px;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .socialNetwork i:hover{
-    transform: scale(1.2);
-  }
-    
-   .header-content p{
-    font-size: 1.5rem;
-    display: block;
-    padding-bottom: 2rem;
-   }
-    
-   /* About Me Button */
-   .logo-name a{
-    /* background-color: lightgreen; */
-    width: 200px;
-    height: 90px;
-    display: block;
-    left: 0;
-   }
-
-   .full{
-     width: 100%;
-     margin: 10px;
-   }
-
-   .btn{
-     --color: #30ADFF;
-     width: 25%;
-     height: 30px;
-     background-color: transparent;
-     border: 1px solid var(--color);
-     color: var(--color);
-     border-radius: 10px;
-     padding: 5px 0;
-     cursor: pointer;
-   }
+  
     
    /* Hover Shaking effect */
    .btn:hover, .ptext .border img:hover{
